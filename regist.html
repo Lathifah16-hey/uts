@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--head element-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS. Bakti Bersama</title>
+    <link rel="icon" type="image/x-icon" href="/latihan/images/faviconbs.png">
+    <link rel="stylesheet" href="style9.css">
+    <script src="script.js"></script>
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Mochiy Pop One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/44801b8c20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!--navigasi menu-->
+<div class="navbar">
+    <div class="header-navbar">
+        <a href="ututu.html"><img src="/latihan/images/logo.png" width="80%" style="margin-left: 20px;"></a>
+    </div>
+    <div class="dmenu" id="home">
+        <a href="ututu.html">Home</a>
+    </div>
+    <div class="dmenu" id="about">
+        <a href="about.html">About</a>
+        <div class="downMen" id="aboutLinks">
+            <a href="about.html#profil">Profil</a>
+            <a href="about.html#history">Tujuan Lembaga</a>
+            <a href="about.html#vision-mission">Visi & Misi</a>
+            <a href="about.html#goals">Struktur Organisasi</a>
+        </div>
+    </div>
+    <div class="dmenu" id="gallery">
+        <a href="galeri.html">Galeri</a>
+    </div>
+    <div class="dmenu" id="registration">
+        <a href="regist.html">Registrasi</a>
+    </div>
+    <div class="dmenu" id="contact">
+        <a href="kontak.html">Kontak</a>
+    </div>
+</div>
+
+<!--sidebar menu-->
+<div class="sidebar">
+    <img src="/latihan/images/pen.jpg" alt="lathifah" class="sidebar-img">
+
+     <!--jam-->
+    <div class="container">
+        <button type="button" onclick="document.getElementById('clock').innerHTML = Date()">
+        <main>Jam</button></main>
+        <p id="clock"></p></div><br>
+        
+    <a href="about.html" class="sidebar-link"><h4>Designer Profile</h4></a>
+    <p> Hai! Salam kenal<br>
+        Aku Lathifah<br>
+    </p>
+    <h4 class="section-title">temui aku di Instagram!</h4>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/llathivh_/" target="_blank"><img src="/latihan/images/pen.jpg" alt="Instagram" class="social-icon"></a>
+    </div>
+</div>
+
+<!--form registrasi anggota-->
+<div class="register">
+    <h2>Form Pendaftaran sebagai Anggota Nasabah</h2>
+    <form action="/submit-registration" method="POST">
+        <label for="fullName">Nama Lengkap :</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Nama Lengkap">
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required placeholder="Alamat Email">
+
+        <label for="phone">Nomor Telepon (WA) :</label>
+        <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon">
+
+        <label for="gender">Jenis Kelamin :</label>
+        <select id="gender" name="gender" required>
+            <option value="">Pilih Jenis Kelamin</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label for="city">Domisili :</label>
+        <input type="text" id="city" name="city" required placeholder="Kota Asal">
+
+        <label for="city">Alamat :</label>
+        <input type="text" id="city" name="city" required placeholder="Detail Alamat">
+
+        <label for="message">Kritik dan Saran untuk Bank Sampah Bakti Bersama :</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tuliskan pesan atau harapan Anda..."></textarea>
+
+        <label for="agreement">Persetujuan :</label>
+        <select id="agreement" name="agreement" required>
+            <option value="">Pilih Persetujuan</option>
+            <option value="setuju">Saya setuju dengan <a href="#">Kebijakan Privasi</a> dan <a href="#">Syarat & Ketentuan</a></option>
+        </select>
+
+        <button type="submit">Daftar Sebagai Anggota Nasabah</button>
+    </form>
+</div>
+
+<!--footer dan icons-->
+<footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Bank Sampah Bakti Bersama. All Rights Reserved.</p>
+      <p>Design by Lathifah Auliya Rahman</p>
+        <a href="https://www.instagram.com/ellngatrknr" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
